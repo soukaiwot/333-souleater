@@ -19,10 +19,10 @@ A Lost Ark class guide for the **333 Full Moon Harvester** Souleater build.
 │   └── guide.js         # UI interactions
 └── images/
     ├── background/      # Hero/class artwork
-    ├── cores/           # Ark Passive / core node icons
+    ├── cores/           # Ark Grid Core icons
     ├── engravings/      # Engraving icons (.webp)
     ├── icons/           # Misc UI icons (tripod tiers, synergy, etc.)
-    ├── passive/         # Passive skill icons
+    ├── passive/         # Ark Passive icons
     ├── runes/           # Rune icons (.webp)
     └── skills/          # Skill icons (.webp)
 ```
@@ -33,10 +33,10 @@ A Lost Ark class guide for the **333 Full Moon Harvester** Souleater build.
 
 - **Overview** — Why play the 333 FMH build and what changed in the April 2026 KR balance patch (in progress)
 - **Party Synergies** — Damage Amplification uptime and which skills provide it
-- **Ark Passive** - Ark Passive setup for the build (todo - in progress)
-- **Ark Grid** - Ark Grid Cores for the build (todo - in progress)
+- **Ark Grid** - Ark Grid Cores for the build (in progress)
+- **Ark Passive** - Ark Passive setup for the build (in progress)
 - **Skills** — Full 333 skill setup with tripod choices, rune recommendations, and notes
-- **T-Skill & Awakening** — Fatal Finale and The End usage tips
+- **T-Skill & Awakening** — T Skill and Awakening skill notes
 - **Engravings** — Core 5-engraving setup
 - **Gems** — Damage and CDR gem priority (in progress)
 - **Rotation** — Builder and Deathlord Mode rotation (in progress)
