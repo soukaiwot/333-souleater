@@ -794,6 +794,66 @@ h3 {
 .gem-skill.priority-1 { border-color: var(--gold-dim); color: var(--gold); }
 .gem-skill.priority-2 { border-color: var(--purple); color: var(--purple-bright); }
 
+/* ─── ROTATION CARDS ─── */
+.rotation-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rotation-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--bg4);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+.rotation-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 200px;
+  max-width: 200px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--border);
+  padding-right: 20px;
+}
+.rotation-phase {
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.rotation-desc {
+  font-size: 15px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+.rotation-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.rot-sep {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: var(--border-bright);
+}
+.skill-icon.rot-highlight {
+  border-color: var(--gold-dim);
+  box-shadow: 0 0 8px rgba(200,169,110,0.25);
+}
+
+@media (max-width: 768px) {
+  .rotation-card { flex-direction: column; align-items: flex-start; }
+  .rotation-left { max-width: 100%; border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; padding-bottom: 12px; }
+}
+
 /* ─── NOTE BOX ─── */
 .note-box {
   background: rgba(200,169,110,0.06);
