@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>333 Souleater</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav class="site-nav">
+  <a class="logo">333 Full Moon Guide <span>/ Lost Ark</span></a>
+  <div class="toc-nav">
+    <a href="#overview">Overview</a>
+    <a href="#synergy">Synergy</a>
+    <a href="#skills">Skills</a>
+    <a href="#awakening">T-Skill & Awakening</a>
+    <a href="#engravings">Engravings</a>
+    <a href="#gems">Gems</a>
+    <a href="#rotation">Rotation</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ─── HERO ─── -->
+  <div class="hero">
+    <div class="hero-inner">
+      <a href="https://www.inven.co.kr/board/lostark/4811/8483789" target="_blank">
+        <img class="hero-img" src="images/background/souleater.png" alt="Souleater">
+      </a>
+      <div class="hero-text">
+        <div class="hero-subtitle">333 망소빙</div>
+        <h1 class="hero-class">Souleater Guide</h1>
+        <div class="hero-meta">
+          <div>
+            <div class="label">Last Updated</div>
+            <div class="value">May 20, 2026</div>
+          </div>
+          <div>
+            <div class="label">Editors</div>
+            <div class="value">me :3</div>
+          </div>
+        </div>
+        <div class="hero-builds">
+          <div class="build-badge active">Full Moon Harvester</div>
+        </div>
+        <p class="hero-note">
+          This guide is created specifically for the new 333 Full Moon build coming with the future balance patch.
+          See
+          <a href="https://maxroll.gg/lost-ark/news/kr-balance-patch-april-2026">KR's April 2026 Balance Patch</a> for details.
+        </p>
+      </div>
+    </div>
+    <div class="ornament">✦ ✦ ✦</div>
+  </div>
+
+  <!-- ─── OVERVIEW ─── -->
+  <div class="section" id="overview">
+    <h2>Why Play This Build?</h2>
+    <p>
+      This build has a ceiling that is basically 30% stronger than current NE builds.
+      Literally just swap OMG
+    </p>
+  </div>
+
+  <!-- ─── SYNERGY ─── -->
+  <div class="section" id="synergy">
+    <h2>Party Synergies</h2>
+    <div class="synergy-box">
+      <div class="synergy-header">
+        <div class="synergy-icon">
+          <img src="images/icons/tripod_tier_1_97.png" alt="Tripod Tier 1">
+        </div>
+        <div>
+          <div class="synergy-label">Damage Amplification</div>
+          <div class="synergy-type">Consistent Synergy</div>
+        </div>
+      </div>
+      <div class="synergy-desc">On hit, damage to foes from all party members <strong>+6%</strong></div>
+      <div class="synergy-skills">
+        <div class="synergy-skill">
+          <div class="skill-icon-sm"><img src="images/skills/deathyard.webp" alt="Death Yard"></div>
+          <span>Death Yard <span class="dur">(12s)</span></span>
+        </div>
+        <div class="synergy-skill">
+          <div class="skill-icon-sm"><img src="images/skills/lunaticedge.webp" alt="Lunatic Edge"></div>
+          <span>Lunatic Edge <span class="dur">(10s)</span></span>
+        </div>
+        <div class="synergy-skill">
+          <div class="skill-icon-sm"><img src="images/skills/deathlord.webp" alt="Deathlord Mode"></div>
+          <span>Deathlord Mode (Z) <span class="dur">(10s)</span></span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--text-dim);margin-top:10px;font-style:italic;">
+      Note: Deathlord Mode (Z) provides the same party-wide synergy as the skills listed above. Do not confuse this duration with the self-buff duration of Deathlord Mode.
+    </p>
+  </div>
+
+  <!-- ─── ENGRAVINGS ─── -->
+  <div class="section" id="engravings">
+    <h2>Engravings</h2>
+    <h3>Core Engravings</h3>
+    <div class="engraving-row">
+      <div class="engraving-pill core"><div class="e-icon"><img src="images/engravings/Grudge.webp" alt="Grudge"></div> Grudge</div>
+      <div class="engraving-pill core"><div class="e-icon"><img src="images/engravings/Cursed_Doll.webp" alt="Cursed Doll"></div> Cursed Doll</div>
+      <div class="engraving-pill core"><div class="e-icon"><img src="images/engravings/Keen_Blunt_Weapon.webp" alt="Keen Blunt Weapon"></div> Keen Blunt Weapon</div>
+      <div class="engraving-pill core"><div class="e-icon"><img src="images/engravings/Raid_Captain.webp" alt="Raid Captain"></div> Raid Captain</div>
+      <div class="engraving-pill core"><div class="e-icon"><img src="images/engravings/Adrenaline.webp" alt="Adrenaline"></div> Adrenaline</div>
+    </div>
+  </div>
+
+  <!-- ─── SKILLS ─── -->
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="tab-panel active" id="skills-333">
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/deathyard.webp" alt="Death Yard"></div>
+          <div class="skill-level">Lvl 7</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Death Yard: 1-2-X</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/quickrecharge_epic.webp" alt="Quick Recharge">
+                <span>Quick Recharge</span>
+              </div>
+              <div class="rune rune-with-label">
+                <img src="images/runes/galewind_epic.webp" alt="Galewind">
+                <span>Galewind</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-synergy">Synergy</span>
+            <span class="tag tag-meter">Meter Gen</span>
+            <span class="tag tag-utility">Mid Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Damage Amplification — Synergy</li>
+            <li>Cry of The Dead - Changes to normal skill</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/deathorder.webp" alt="Death Order"></div>
+          <div class="skill-level">Lvl 11</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Death Order: 1-1-1</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/wealth_legendary.webp" alt="Wealth">
+                <span>Wealth</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-meter">Meter Gen</span>
+            <span class="tag tag-utility">Mid Stagger</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Soul Reversal - More meter generation</li>
+            <li>Long Order — Extra hits for more meter generation</li>
+            <li>Weak Point Detection - Damage increase</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/souldrain.webp" alt="Soul Drain"></div>
+          <div class="skill-level">Lvl 10</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Soul Drain: 1-3-2</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/wealth_epic.webp" alt="Wealth">
+                <span>Wealth</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-meter">Meter Gen</span>
+            <span class="tag tag-utility">Mid Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Soul Reversal - More meter generation</li>
+            <li>Gravedigger - Changes to normal skill</li>
+            <li>Death Grudge - More meter generation</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/astaros.webp" alt="Astaros"></div>
+          <div class="skill-level">Lvl 14</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Astaros: 3-2-1</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/wealth_epic.webp" alt="Wealth">
+                <span>Wealth</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-meter">Meter Gen</span>
+            <span class="tag tag-utility">Weak Point Lv.1</span>
+            <span class="tag tag-utility">Mid-High Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+
+          </div>
+          <ul class="skill-tripods">
+            <li>Mind Enhancement — MP Cost Decrease</li>
+            <li>Possession - Damage, also buffed by Order Star Core</li>
+            <li>Delain Shackles — 20% crit rate on skill and more damage</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/gluttony.webp" alt="Gluttony"></div>
+          <div class="skill-level">Lvl 14</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Gluttony: 1-2-1</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/quickrecharge_legendary.webp" alt="Quick Recharge">
+                <span>Quick Recharge</span>
+              </div>
+              <div class="rune rune-with-label">
+                <img src="images/runes/wealth_rare.webp" alt="Wealth">
+                <span>Wealth</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-counter">Counter</span>
+            <span class="tag tag-meter">Meter Gen</span>
+            <span class="tag tag-utility">Low Stagger</span>
+            <span class="tag tag-utility">Front Attack</span>
+            <span class="tag tag-utility">Push Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Soul Reversal - More meter generation</li>
+            <li>Possession - Damage, also buffed by Order Star Core (which also grants push immunity with this tripod)</li>
+            <li>Onyx Moon Energy - More meter generation and damage</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/guillotine.webp" alt="Guillotine Swing"></div>
+          <div class="skill-level">Lvl 14</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Guillotine Swing: 2-2-2</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/wealth_rare.webp" alt="Wealth">
+                <span>Wealth</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-utility">Weak Point Lv.1</span>
+            <span class="tag tag-utility">Mid-High Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Concussion — Increases Stagger, or Weak Point Enhancement - Weak Point Lv. +1</li>
+            <li>Scaffold - Highest damage tripod, can also opt for Weak Point Detection</li>
+            <li>Otherworldly Monarch - More meter generation and damage</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/reaperscythe.webp" alt="Reaper's Scythe"></div>
+          <div class="skill-level">Lvl 14</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Reaper's Scythe: 2-3-2</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/galewind_legendary.webp" alt="Galewind">
+                <span>Galewind</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-utility">Mid-High Stagger</span>
+            <span class="tag tag-utility">Back Attack</span>
+            <span class="tag tag-utility">Push Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Tenacity - Grants Push Immunity</li>
+            <li>Weak Point Detection — Damage Increase</li>
+            <li>Otherworldly Monarch - More meter generation and damage</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/vestige.webp" alt="Vestige"></div>
+          <div class="skill-level">Lvl 14</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Vestige: 1-2-1</span>
+            <div class="skill-runes">
+              <div class="rune rune-with-label">
+                <img src="images/runes/galewind_legendary.webp" alt="Galewind">
+                <span>Galewind</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-synergy">Destiny</span>
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-utility">Mid-High Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Tenacity — Push Immunity</li>
+            <li>Rear Blast - Instant vestige as it is used to proc destiny; speeds up cycle speed</li>
+            <li>Two Souls — Damage Increase + Skill stacks to two</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- /skills section -->
+
+  <!-- ─── T-SKILL + AWAKENING ─── -->
+  <div class="section" id="awakening">
+    <h2>T Skill & Awakening</h2>
+    <div class="tab-panel active" id="awakening-333">
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/fatalfinale.webp" alt="Fatal Finale"></div>
+          <div class="skill-level">Fatal Finale</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Hyper Awakening Skill (T Skill)</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-utility">Mid-High Stagger</span>
+            <span class="tag tag-utility">Paralysis Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>Use only inside deathlord mode.</li>
+            <li>Replaces Reaper's Scythe during your deathlord rotation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-img-wrap">
+          <div class="skill-img skill-img-large"><img src="images/skills/awakening.webp" alt="Awakening"></div>
+          <div class="skill-level">The End</div>
+        </div>
+        <div class="skill-right">
+          <div class="skill-top">
+            <span class="skill-name">Awakening | Hyper Awakening</span>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-damage">Damage</span>
+            <span class="tag tag-utility">High Stagger</span>
+            <span class="tag tag-utility">Push Immunity, Status Ailment Immunity</span>
+          </div>
+          <ul class="skill-tripods">
+            <li>You are never really using this unless you really need the push/status immunity, or if you need to wait 1-2 seconds for T skill inside your deathlord (might be a dps loss though).</li>
+            <li>Hyper Awakening is also really only used to avoid patterns (Serca G2 120x puddles) or precast for damage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── GEMS ─── -->
+  <div class="section" id="gems">
+    <h2>Gem Priority</h2>
+    <div class="tab-panel active" id="gems-333">
+      
+    </div>
+  </div>
+
+  <!-- ─── ROTATION ─── -->
+  <div class="section" id="rotation">
+    <h2>Rotation</h2>
+    <div class="tab-panel active" id="rot-333">
+      
+    </div>
+  </div>
+
+  <!-- ─── FOOTER ─── -->
+  <div class="site-footer">
+    <a href="#" class="back-top" onclick="backToTop(); return false;">↑ Back to Top</a>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<!-- JavaScript -->
+<script src="js\guide.js"></script>
+</body>
+</html>
