@@ -365,6 +365,71 @@ h3 {
 .synergy-skill span { color: var(--text); }
 .synergy-skill .dur { color: var(--text-dim); font-size: 16px; margin-left: 4px; }
 
+/* ─── ARK PASSIVES ─── */
+.ark-passives-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  overflow: hidden;
+}
+.ark-passive-header {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 14px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.ark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+.ark-col h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.ark-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.ark-item img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-bright);
+  background: var(--bg4);
+}
+.ark-item .label {
+  font-size: 16px;
+  color: var(--text-dim);
+  text-align: center;
+}
+.ark-item .small { font-size: 16px; color: var(--text-dim); }
+
+.evo-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.evo-row {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.evo-row .ark-item { flex: 1; min-width: 0; }
+.evo-row.single { justify-content: center; }
+.evo-row.single .ark-item { flex: 0 0 auto; }
+
 /* ─── BUILD COMPARE ─── */
 .compare-grid {
   display: grid;
@@ -810,6 +875,8 @@ h3 {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 18px;
 }
 .pill-btn {
@@ -818,7 +885,7 @@ h3 {
   border-radius: 20px;
   padding: 5px 14px;
   font-family: 'Cinzel', serif;
-  font-size: 12px;
+  font-size: 16px;
   color: var(--text-dim);
   cursor: pointer;
   transition: all 0.15s;
@@ -829,6 +896,10 @@ h3 {
   border-color: var(--gold-dim);
   color: var(--gold);
 }
+
+/* Panels used by pill-nav (e.g. Ark Passives) */
+.ark-panel-group { display: none; }
+.ark-panel-group.active { display: block; }
 
 /* ─── ORNAMENT ─── */
 .ornament {
