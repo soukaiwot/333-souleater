@@ -393,6 +393,47 @@ h3 {
   margin-bottom: 8px;
   text-align: center;
 }
+
+/* ─── ARK GRID CORES ─── */
+.core-tabs {
+  display: flex;
+  gap: 0;
+  background: var(--bg4);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.core-tab {
+  flex: 1;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 18px;
+  color: var(--text-dim);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 28px;
+  align-items: start;
+  justify-items: center;
+}
+.core-col { min-width: 120px; }
+.core-item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.core-icon {
+  width: 76px; height: 76px; background: var(--bg4); border-radius: 8px; display:flex; align-items:center; justify-content:center; overflow:hidden; border:1px solid var(--border-bright);
+}
+.core-icon img { width: 76px; height:76px; object-fit:cover; display:block; }
+.core-label { font-size: 17px; color: var(--text-dim); text-align:center; max-width:160px; }
+
+/* keep at least 3 columns until very narrow screens */
+@media (max-width: 480px) {
+  .core-grid { grid-template-columns: 1fr; }
+}
 .ark-item {
   display: flex;
   flex-direction: column;
