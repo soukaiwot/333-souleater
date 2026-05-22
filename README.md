@@ -38,8 +38,10 @@ A Lost Ark class guide for the **333 Full Moon Harvester** Souleater build.
 - **Skills** — Full 333 skill setup with tripod choices, rune recommendations, and notes
 - **T-Skill & Awakening** — T Skill and Awakening skill notes
 - **Engravings** — Core 5-engraving setup
-- **Gems** — Damage and CDR gem priority (in progress)
+- **Gems** — Damage and CDR gem priority, DMR Distribution (in progress)
 - **Rotation** — Builder and Deathlord Mode rotation (in progress)
+- **FAQ** - Frequently Asked Questions
+- **Resources** - Links to videos for Trixion and Raid gameplay.
 
 ---
 
