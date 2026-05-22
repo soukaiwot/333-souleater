@@ -854,6 +854,27 @@ h3 {
   .rotation-left { max-width: 100%; border-right: none; border-bottom: 1px solid var(--border); padding-right: 0; padding-bottom: 12px; }
 }
 
+/* ─── RESOURCES ─── */
+.resources-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.resource-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: var(--cyan-dim);
+  text-decoration: none;
+  padding: 2px 0;
+  width: fit-content;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.resource-link:hover {
+  color: var(--cyan);
+  border-bottom-color: var(--cyan-dim);
+}
+
 /* ─── NOTE BOX ─── */
 .note-box {
   background: rgba(200,169,110,0.06);
