@@ -874,6 +874,26 @@ h3 {
   color: var(--cyan);
   border-bottom-color: var(--cyan-dim);
 }
+.resource-entry {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.resource-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.resource-note a {
+  color: var(--text-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-bright);
+  transition: color 0.15s, border-color 0.15s;
+}
+.resource-note a:hover {
+  color: var(--text-bright);
+  border-bottom-color: var(--text-dim);
+}
 
 /* ─── NOTE BOX ─── */
 .note-box {
