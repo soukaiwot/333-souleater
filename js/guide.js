@@ -54,3 +54,104 @@ function toggleFaq(item) {
 function backToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+
+/**
+ * Render DPS Distrubution charts using Chart.js. Data is hardcoded for now, but could be made dynamic in the future if desired.
+ */
+(function () {
+  const skills = [
+    { label: "Astaros",          icon: 'images/skills/astaros.webp',      value: 24, color: '#3d9ea7' },
+    { label: "Vestige",          icon: 'images/skills/vestige.webp',       value: 17, color: '#9b6fd4' },
+    { label: "Gluttony",         icon: 'images/skills/gluttony.webp',      value: 16, color: '#3d9ea7' },
+    { label: "Guillotine Swing", icon: 'images/skills/guillotine.webp',    value: 16, color: '#9b6fd4' },
+    { label: "T-Skill",          icon: 'images/skills/fatalfinale.webp',   value: 15, color: '#7e53b6' },
+    { label: "Reaper's Scythe",  icon: 'images/skills/reaperscythe.webp',  value:  8, color: '#9b6fd4' },
+    { label: "Other",            icon: 'images/skills/unknown.webp',     value:  4, color: '#3d4060' },
+  ];
+
+  const labels = skills.map(s => s.label);
+  const values = skills.map(s => s.value);
+  const colors = skills.map(s => s.color);
+
+  const ICON_SIZE = 32;
+  const ICON_PAD  = 6;
+  const Y_PADDING = ICON_SIZE + ICON_PAD;
+
+  const imgs = skills.map(s => {
+    const img = new Image();
+    img.src = s.icon;
+    return img;
+  });
+
+  const iconLabelPlugin = {
+    id: 'iconLabels',
+    afterDraw(chart) {
+      const ctx = chart.ctx;
+      const yAxis = chart.scales.y;
+      yAxis.ticks.forEach((tick, i) => {
+        const y = yAxis.getPixelForTick(i);
+        const x = yAxis.left - ICON_PAD - ICON_SIZE;
+        if (imgs[i].complete) {
+          ctx.drawImage(imgs[i], x, y - ICON_SIZE / 2, ICON_SIZE, ICON_SIZE);
+        }
+      });
+    }
+  };
+
+  let barChartInstance;
+  let loaded = 0;
+  imgs.forEach(img => {
+    img.onload = () => { loaded++; if (loaded === imgs.length && barChartInstance) barChartInstance.update(); };
+  });
+
+  const textColor = '#7a7d94';
+  const gridColor = 'rgba(255,255,255,0.06)';
+
+  new Chart(document.getElementById('donutChart'), {
+    type: 'doughnut',
+    data: {
+      labels,
+      datasets: [{ data: values, backgroundColor: colors, borderColor: '#0f1117', borderWidth: 2, hoverOffset: 6 }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false, cutout: '62%',
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ~${ctx.parsed}%` } }
+      }
+    }
+  });
+
+  barChartInstance = new Chart(document.getElementById('barChart'), {
+    type: 'bar',
+    plugins: [iconLabelPlugin],
+    data: {
+      labels,
+      datasets: [{ data: values, backgroundColor: colors, borderRadius: 3, borderSkipped: false }]
+    },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      layout: { padding: { left: Y_PADDING } },
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: ctx => ` ~${ctx.parsed.x}%` } }
+      },
+      scales: {
+        x: {
+          min: 0, max: 25,
+          ticks: {
+            color: textColor,
+            font: { size: 13, family: 'JetBrains Mono, monospace' },
+            callback: v => v + '%'
+          },
+          grid: { color: gridColor }
+        },
+        y: {
+          ticks: { display: false },
+          grid: { display: false }
+        }
+      }
+    }
+  });
+})();

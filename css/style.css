@@ -794,6 +794,58 @@ h3 {
 .gem-skill.priority-1 { border-color: var(--gold-dim); color: var(--gold); }
 .gem-skill.priority-2 { border-color: var(--purple); color: var(--purple-bright); }
 
+/* ─── DPS DISTRIBUTION ─── */
+.dps-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.dps-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 20px;
+}
+.dps-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.dps-swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.dps-charts {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.dps-donut-wrap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  flex-shrink: 0;
+}
+.dps-bar-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  height: 280px;
+}
+.dps-note {
+  font-size: 15px;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: 16px;
+}
+
 /* ─── ROTATION CARDS ─── */
 .rotation-box {
   display: flex;

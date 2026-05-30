@@ -786,6 +786,31 @@
     </div>
   </div>
 
+  <!-- ─── DPS DISTRIBUTION ─── -->
+  <div class="section" id="dps">
+    <h2>DPS Distribution</h2>
+    <div class="dps-box">
+      <div class="dps-legend">
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#3d9ea7;"></span>Astaros ~24%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#9b6fd4;"></span>Vestige ~17%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#3d9ea7;"></span>Gluttony ~16%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#9b6fd4;"></span>Guillotine Swing ~16%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#7e53b6;"></span>T-Skill ~15%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#9b6fd4;"></span>Reaper's Scythe ~8%</span>
+        <span class="dps-legend-item"><span class="dps-swatch" style="background:#3d4060;"></span>Other ~4%</span>
+      </div>
+      <div class="dps-charts">
+        <div class="dps-bar-wrap">
+          <canvas id="barChart"></canvas>
+        </div>
+        <div class="dps-donut-wrap">
+          <canvas id="donutChart"></canvas>
+        </div>
+      </div>
+      <p class="dps-note">Approximate values based on KR. Vestige, Gluttony, Guillotine Swing are very close (16-17% with some variance), T-Skill range is 14–17%..</p>
+    </div>
+  </div>
+
   <!-- ─── ROTATION ─── -->
   <div class="section" id="rotation">
     <h2>Rotation</h2>
@@ -961,6 +986,7 @@
 </div><!-- /page-wrap -->
 
 <!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.0/chart.umd.js" integrity="sha512-D4pL3vNgjkHR/qq+nZywuS6Hg1gwR+UzrdBW6Yg8l26revKyQHMgPq9CLJ2+HHalepS+NuGw1ayCCsGXu9JCXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/guide.js"></script>
 </body>
 </html>
