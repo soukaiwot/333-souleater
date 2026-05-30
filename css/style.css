@@ -74,7 +74,7 @@ body::before {
   gap: 16px;
 }
 .site-nav a.logo {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 20px;
   font-weight: 700;
   color: var(--gold);
@@ -92,7 +92,7 @@ body::before {
 .toc-nav a {
   color: var(--text-dim);
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 13px;
   letter-spacing: 0.05em;
   padding: 4px 8px;
@@ -127,7 +127,7 @@ body::before {
 }
 .hero-text { flex: 1; }
 .hero-class {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: var(--white);
@@ -137,7 +137,7 @@ body::before {
   text-shadow: 0 0 40px rgba(200,169,110,0.3);
 }
 .hero-subtitle {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 19px;
   letter-spacing: 0.2em;
   color: var(--gold-dim);
@@ -152,7 +152,7 @@ body::before {
   font-size: 16px;
 }
 .hero-meta .label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   letter-spacing: 0.15em;
   color: var(--text-dim);
@@ -170,7 +170,7 @@ body::before {
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 6px 14px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   letter-spacing: 0.1em;
   color: var(--purple-bright);
@@ -201,7 +201,7 @@ body::before {
 .section + .section { border-top: 1px solid var(--border); margin-top: 40px; }
 
 h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 22px;
   font-weight: 600;
   color: var(--gold);
@@ -218,7 +218,7 @@ h2::after {
   background: linear-gradient(to right, var(--border-bright), transparent);
 }
 h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 17px;
   font-weight: 600;
   color: var(--text-bright);
@@ -238,7 +238,7 @@ h3 {
   border: none;
   border-bottom: 2px solid transparent;
   padding: 8px 18px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 15px;
   letter-spacing: 0.1em;
   color: var(--text-dim);
@@ -266,7 +266,7 @@ h3 {
   padding: 16px;
 }
 .identity-card h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 12px;
   letter-spacing: 0.15em;
   color: var(--purple-bright);
@@ -309,13 +309,13 @@ h3 {
   display: block;
 }
 .synergy-header .synergy-label {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-bright);
 }
 .synergy-header .synergy-type {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 13px;
   color: var(--cyan);
   letter-spacing: 0.1em;
@@ -375,7 +375,7 @@ h3 {
 }
 .ark-passive-header {
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   color: var(--gold);
   margin-bottom: 8px;
@@ -387,7 +387,7 @@ h3 {
   align-items: start;
 }
 .ark-col h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   color: var(--text-bright);
   margin-bottom: 8px;
@@ -408,7 +408,7 @@ h3 {
   flex: 1;
   padding: 10px 12px;
   text-align: center;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 18px;
   color: var(--text-dim);
   background: transparent;
@@ -516,7 +516,7 @@ h3 {
 .pros-cons { display: flex; gap: 12px; }
 .pc-col { flex: 1; }
 .pc-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -590,7 +590,7 @@ h3 {
   background: linear-gradient(135deg, rgba(123,94,167,0.15), transparent 60%);
 }
 .skill-level {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   color: var(--text-dim);
   letter-spacing: 0.05em;
@@ -611,7 +611,7 @@ h3 {
   width: 100%;
 }
 .skill-name {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: var(--text-bright);
@@ -664,7 +664,7 @@ h3 {
 .rune.with-label span,
 .rune.rune-with-label span,
 .rune-with-label span {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   color: var(--text);
   display: inline-block;
@@ -680,7 +680,7 @@ h3 {
   flex-wrap: wrap;
 }
 .tag {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   padding: 2px 7px;
   border-radius: 3px;
@@ -709,7 +709,7 @@ h3 {
 .data-table th {
   background: var(--bg4);
   color: var(--text-dim);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -727,7 +727,7 @@ h3 {
 .data-table tr:hover td { background: rgba(255,255,255,0.02); }
 .data-table td strong { color: var(--text-bright); }
 .data-table td code {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   background: var(--bg4);
   padding: 2px 7px;
@@ -751,7 +751,7 @@ h3 {
   align-items: center;
   justify-content: center;
   font-size: 13px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-weight: 700;
   flex-shrink: 0;
   letter-spacing: 0.05em;
@@ -760,7 +760,7 @@ h3 {
 .gem-dmg { background: radial-gradient(circle, #d4401a, #8a1f0a); color: #fff; border: 2px solid #e05030; }
 .gem-cdr { background: radial-gradient(circle, #1a6ab4, #0a3060); color: #fff; border: 2px solid #2a90e0; }
 .gem-arr {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   color: var(--text-dim);
 }
@@ -771,7 +771,7 @@ h3 {
 .gem-left { display: flex; align-items: center; gap: 12px; min-width: 170px; }
 .gem-type { width: 76px; height: 76px; border-radius: 8px; background: var(--bg4); border: 1px solid var(--border-bright); overflow: hidden; display: flex; align-items:center; justify-content:center; }
 .gem-type img { width: 68px; height: 68px; object-fit: cover; display:block; }
-.gem-title { font-family: 'Cinzel', serif; font-size: 14px; color: var(--text-bright); text-transform: uppercase; letter-spacing: 0.12em; }
+.gem-title { font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif; font-size: 14px; color: var(--text-bright); text-transform: uppercase; letter-spacing: 0.12em; }
 .gem-icons { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .skill-icon { width: 56px; height: 56px; background: var(--bg3); border-radius: 8px; display:flex; align-items:center; justify-content:center; border: 1px solid var(--border-bright); overflow:hidden; }
 .skill-icon img { width: 100%; height: 100%; object-fit: cover; display:block; }
@@ -811,7 +811,7 @@ h3 {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 13px;
   color: var(--text-dim);
 }
@@ -872,7 +872,7 @@ h3 {
   padding-right: 20px;
 }
 .rotation-phase {
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 14px;
   font-weight: 600;
   color: var(--text);
@@ -892,7 +892,7 @@ h3 {
   flex: 1;
 }
 .rot-sep {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 18px;
   color: var(--border-bright);
 }
@@ -913,7 +913,7 @@ h3 {
   gap: 8px;
 }
 .resource-link {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 15px;
   color: var(--cyan-dim);
   text-decoration: none;
@@ -932,7 +932,7 @@ h3 {
   gap: 10px;
 }
 .resource-note {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 12px;
   color: var(--text-dim);
 }
@@ -974,7 +974,7 @@ h3 {
 .faq-q {
   background: var(--bg3);
   padding: 14px 18px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   color: var(--text-bright);
   cursor: pointer;
@@ -1072,7 +1072,7 @@ h3 {
 .rot-icon.purple    { border-color: var(--purple);   background: rgba(123,94,167,0.1); }
 .rot-label {
   font-size: 10px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   color: var(--text-dim);
   text-align: center;
   max-width: 44px;
@@ -1096,7 +1096,7 @@ h3 {
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 5px 14px;
-  font-family: 'Cinzel', serif;
+  font-family: 'Jost Variable', Jost, ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   color: var(--text-dim);
   cursor: pointer;
@@ -1137,7 +1137,7 @@ h3 {
   text-decoration: none;
 }
 .site-footer .back-top {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 14px;
   color: var(--text-dim);
 }
