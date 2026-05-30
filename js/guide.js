@@ -1,8 +1,4 @@
 /**
- * Nexus Guide — Interactive UI
- */
-
-/**
  * Switch the active tab within a tab group.
  * @param {string} group   - Unused group identifier (kept for backwards compat)
  * @param {string} panelId - ID of the tab panel to show
@@ -154,4 +150,36 @@ function backToTop() {
       }
     }
   });
+})();
+
+
+/**
+ * Toggle a nexus style side nav.
+ */
+function toggleSideNav() {
+  document.getElementById('sideNav').classList.toggle('collapsed');
+}
+
+// highlight active section on scroll
+(function () {
+  const links = document.querySelectorAll('.side-nav-link[href^="#"]');
+  const sections = Array.from(links)
+    .map(l => {
+      const href = l.getAttribute('href');
+      if (!href || href === '#') return null;
+      return document.querySelector(href);
+    })
+    .filter(Boolean);
+
+  function onScroll() {
+    const scrollY = window.scrollY + 100;
+    let current = sections[0];
+    sections.forEach(s => { if (scrollY >= s.offsetTop) current = s; });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + current.id);
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
