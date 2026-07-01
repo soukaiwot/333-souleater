@@ -59,11 +59,12 @@ function backToTop() {
   const skills = [
     { label: "Astaros",          icon: 'images/skills/astaros.webp',      value: 24, color: '#3d9ea7' },
     { label: "Gluttony",         icon: 'images/skills/gluttony.webp',      value: 17, color: '#3d9ea7' },
-    { label: "Vestige",          icon: 'images/skills/vestige.webp',       value: 16, color: '#9b6fd4' },
-    { label: "Guillotine Swing", icon: 'images/skills/guillotine.webp',    value: 16, color: '#9b6fd4' },
-    { label: "T-Skill",          icon: 'images/skills/fatalfinale.webp',   value: 15, color: '#7e53b6' },
+    { label: "Vestige",          icon: 'images/skills/vestige.webp',       value: 17, color: '#9b6fd4' },
+    { label: "Guillotine Swing", icon: 'images/skills/guillotine.webp',    value: 15, color: '#9b6fd4' },
+    { label: "T-Skill",          icon: 'images/skills/fatalfinale.webp',   value: 14, color: '#7e53b6' },
     { label: "Reaper's Scythe",  icon: 'images/skills/reaperscythe.webp',  value:  8, color: '#9b6fd4' },
-    { label: "Other",            icon: 'images/skills/unknown.webp',     value:  4, color: '#3d4060' },
+    { label: "Death Order",      icon: 'images/skills/deathorder.webp',    value:  3, color: '#3d9ea7' },
+    { label: "Other",            icon: 'images/skills/unknown.webp',     value:  2, color: '#3d4060' },
   ];
 
   const labels = skills.map(s => s.label);
